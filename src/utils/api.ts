@@ -8,7 +8,7 @@ export const fetchWithAuth = async (endpoint: string, options: RequestInit = {})
   if (!token) {
     throw new Error('No JWT token found');
   }
-  console.log('JWT',token)
+  // console.log('JWT',token)
 
   const response = await fetch(`${API_BASE_URL}${endpoint}`, {
     ...options,

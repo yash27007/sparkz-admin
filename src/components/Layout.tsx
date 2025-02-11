@@ -5,7 +5,6 @@ import {
   LayoutDashboard, 
   Calendar, 
   Megaphone, 
-  Users, 
   LogOut,
   QrCode
 } from 'lucide-react';
@@ -20,7 +19,6 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     { name: 'Dashboard', href: '/admin', icon: LayoutDashboard },
     { name: 'Events', href: '/admin/events', icon: Calendar },
     { name: 'Announcements', href: '/admin/announcements', icon: Megaphone },
-    { name: 'Registrations', href: '/admin/registrations', icon: Users },
   ];
 
   return (

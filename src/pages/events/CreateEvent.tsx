@@ -67,7 +67,7 @@ const CreateEvent = () => {
 
   const onSubmit = async (data: EventFormData) => {
     try {
-      console.log(data);
+      // console.log(data);
       const response = await axiosWithAuth.post('/api/admin/events/create', data);
 
       if (response.status !== 201) throw new Error('Failed to create event');
