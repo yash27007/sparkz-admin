@@ -1,7 +1,7 @@
 import axios from 'axios';
 
-export const API_BASE_URL = 'http://localhost:5000';
-// export const API_BASE_URL = 'https://sparkz-backend-6kv6.onrender.com';
+// export const API_BASE_URL = 'http://localhost:5000';
+export const API_BASE_URL = 'https://sparkz-backend-6kv6.onrender.com';
 
 export const fetchWithAuth = async (endpoint: string, options: RequestInit = {}) => {
   const token = localStorage.getItem('authToken');
